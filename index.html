@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بطولة أبطال مصراتة</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/fireworks.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/تجمع أبطال مصراتة.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/images/تجمع أبطال مصراتة.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <div class="organizers">
+        <img
+          src="./assets/images/تجمع أبطال مصراتة.png"
+          alt="شعار تجمع أبطال مصراتة"
+        />
+        <img
+          src="./assets/images/android-libya.png"
+          alt="شعار شركة اندرويد ليبيا"
+        />
+        <img src="./assets/images/etihad.png" alt="شعار نادي الإتحاد" />
+      </div>
+      <div class="header">
+        <h1>
+          بطولة <span class="highlight">أبطال</span> مصراتة 20<span
+            class="highlight"
+            >24</span
+          >
+          <br />
+        </h1>
+        <form id="number">
+          <input type="text" name="min" placeholder="الحد الأدنى" />
+          <input type="text" name="max" placeholder="الحد الأعلى" />
+          <button class="scroll-btn btn">بدء</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <!-- The audio -->
+      <audio
+        loop
+        id="drum_roll"
+        src="assets/audio/drum-roll-sound-effect.mp3"
+      ></audio>
+      <audio id="cheer" src="assets/audio/cheer.mpeg"></audio>
+
+      <div class="placeholder">
+        <div class="before"></div>
+        <div class="after"></div>
+      </div>
+
+      <div class="slotcontainer">
+        <div class="container">
+          <h1 id="lucky">...الفائز هو</h1>
+          <div class="slot">
+            <div id="scroll1">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="slot">
+            <div id="scroll2">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="slot">
+            <div id="scroll3">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="slot">
+            <div id="scroll4">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="slot">
+            <div id="scroll5">
+              <div>0</div>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>0</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="spin-button btn">سحب</button>
+      </div>
+
+      <footer>
+        <div id="footer-content">
+          <div id="fb-handle">
+            <img src="/assets/images/facebook-logo.svg" />
+            <p id="handle">@Android Libya</p>
+          </div>
+
+          <p id="copyright">جميع الحقوق محفوظة - شركة أندرويد ليبيا &copy;</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
